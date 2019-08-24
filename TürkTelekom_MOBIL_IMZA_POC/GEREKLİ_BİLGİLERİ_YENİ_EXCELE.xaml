@@ -1,0 +1,252 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="GEREKLİ_BİLGİLERİ_YENİ_EXCELE" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="284,470" sap2010:WorkflowViewState.IdRef="GEREKLİ_BİLGİLERİ_YENİ_EXCELE_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="GEREKLİ_BİLGİLERİ_YENİ_EXCELE" sap:VirtualizedContainerService.HintSize="244,390" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="GEREKLI_BILGILER_YENİ_EXCEL_AKTARDI" sap:VirtualizedContainerService.HintSize="222,266" sap2010:WorkflowViewState.IdRef="Sequence_10">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="ui:GenericValue" Name="FIRM_NO" />
+        <Variable x:TypeArguments="ui:GenericValue" Name="BASLANGIC_TARIH" />
+        <Variable x:TypeArguments="ui:GenericValue" Name="PROD_IP" />
+        <Variable x:TypeArguments="ui:GenericValue" Name="CIKIS_IP" />
+        <Variable x:TypeArguments="ui:GenericValue" Name="TEL_NO" />
+        <Variable x:TypeArguments="ui:GenericValue" Name="MAIL" />
+        <Variable x:TypeArguments="ui:GenericValue" Name="ISIM" />
+        <Variable x:TypeArguments="ui:GenericValue" Name="BITIS_TARIH" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_6">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Start Process" FileName="C:\Users\Kafein\Downloads\Mobil İmza Platform Bağlantısı_ebelediye.pdf" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="StartProcess_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:StartProcess>
+        <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button'" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+          <ui:Click.CursorPosition>
+            <ui:CursorPosition OffsetX="25" OffsetY="12" Position="TopLeft" />
+          </ui:Click.CursorPosition>
+          <ui:Click.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="f3f0d02e705994eb4b2ca1be69c1c38a" Selector="&lt;wnd app='acrord32.exe' cls='AcrobatSDIWindow' title='Mobil İmza Platform Bağlantısı_ebelediye.pdf - Adobe Acrobat Rea*' /&gt;&lt;ctrl idx='1' name='Ekranı Kapla' role='push button' /&gt;" WaitForReady="INTERACTIVE" />
+          </ui:Click.Target>
+        </ui:Click>
+        <Sequence DisplayName="Basic" sap:VirtualizedContainerService.HintSize="314,51" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Type Into 'Edit'" EmptyField="True" sap:VirtualizedContainerService.HintSize="314,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" SendWindowMessages="False" SimulateType="False" Text="%100">
+            <ui:TypeInto.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="a4ae130ceb6b4428a90ebcf8e5c773f4" Selector="&lt;wnd app='acrord32.exe' cls='AcrobatSDIWindow' title='Mobil İmza Platform Bağlantısı_ebelediye.pdf - Adobe Acrobat Rea*' /&gt;&lt;wnd aaname='Yakınlaştırma Değeri' cls='Edit' /&gt;" WaitForReady="INTERACTIVE" />
+            </ui:TypeInto.Target>
+          </ui:TypeInto>
+          <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Send Hotkey" EmptyField="False" sap:VirtualizedContainerService.HintSize="314,116" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SendWindowMessages="False" SpecialKey="True">
+            <ui:SendHotkey.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
+            </ui:SendHotkey.Target>
+          </ui:SendHotkey>
+        </Sequence>
+        <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="314,51" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+            <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="KONTAKT" />
+            <Variable x:TypeArguments="ui:GenericValue" Name="yeni" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'Mobil mza Acrobatsd'" sap:VirtualizedContainerService.HintSize="450,736" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="e75f14bc708eb98cd8b7a67ac51eb90f" Selector="&lt;wnd app='acrord32.exe' cls='AcrobatSDIWindow' title='Mobil İmza Platform Bağlantısı_ebelediye.pdf - Adobe Acrobat Rea*' /&gt;">
+            <ui:WindowScope.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="436,590" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ExtractData NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable]" DelayBetweenPagesMS="300" DisplayName="Extract Structured Data 'table'" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' /&gt;" sap:VirtualizedContainerService.HintSize="414,106" sap2010:WorkflowViewState.IdRef="ExtractData_1" MaxNumberOfResults="100">
+                    <ui:ExtractData.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="81449fbfd53b80f33224c8757432a674" Selector="&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl role='table' /&gt;" WaitForReady="INTERACTIVE" />
+                    </ui:ExtractData.Target>
+                  </ui:ExtractData>
+                  <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="414,320" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" WorkbookPath="C:\Users\Kafein\Desktop\qwe.xlsx">
+                    <ui:ExcelApplicationScope.Body>
+                      <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="336,211" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:ExcelWriteRange AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Sheet1" StartingCell="A1" />
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ExcelApplicationScope.Body>
+                  </ui:ExcelApplicationScope>
+                </Sequence>
+              </ActivityAction>
+            </ui:WindowScope.Body>
+          </ui:WindowScope>
+        </Sequence>
+      </Sequence>
+      <Sequence DisplayName="vericekme" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_9">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="414,985" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" WorkbookPath="C:\Users\Kafein\Desktop\qwe.xlsx">
+          <ui:ExcelApplicationScope.Body>
+            <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="336,876" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ExcelReadCell Cell="B1" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="314,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_1" SheetName="Sheet1">
+                  <ui:ExcelReadCell.Result>
+                    <OutArgument x:TypeArguments="ui:GenericValue">[FIRM_NO]</OutArgument>
+                  </ui:ExcelReadCell.Result>
+                </ui:ExcelReadCell>
+                <ui:ExcelReadCell Cell="A5" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="314,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_2" SheetName="Sheet1">
+                  <ui:ExcelReadCell.Result>
+                    <OutArgument x:TypeArguments="ui:GenericValue">[ISIM]</OutArgument>
+                  </ui:ExcelReadCell.Result>
+                </ui:ExcelReadCell>
+                <ui:ExcelReadCell Cell="B5" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="314,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_3" SheetName="Sheet1">
+                  <ui:ExcelReadCell.Result>
+                    <OutArgument x:TypeArguments="ui:GenericValue">[TEL_NO]</OutArgument>
+                  </ui:ExcelReadCell.Result>
+                </ui:ExcelReadCell>
+                <ui:ExcelReadCell Cell="C5" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="314,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_4" SheetName="Sheet1">
+                  <ui:ExcelReadCell.Result>
+                    <OutArgument x:TypeArguments="ui:GenericValue">[MAIL]</OutArgument>
+                  </ui:ExcelReadCell.Result>
+                </ui:ExcelReadCell>
+                <ui:ExcelReadCell Cell="B10" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="314,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_5" SheetName="Sheet1">
+                  <ui:ExcelReadCell.Result>
+                    <OutArgument x:TypeArguments="ui:GenericValue">[CIKIS_IP]</OutArgument>
+                  </ui:ExcelReadCell.Result>
+                </ui:ExcelReadCell>
+                <ui:ExcelReadCell Cell="B11" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="314,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_6" SheetName="Sheet1">
+                  <ui:ExcelReadCell.Result>
+                    <OutArgument x:TypeArguments="ui:GenericValue">[PROD_IP]</OutArgument>
+                  </ui:ExcelReadCell.Result>
+                </ui:ExcelReadCell>
+                <ui:ExcelReadCell Cell="B15" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="314,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_7" SheetName="Sheet1">
+                  <ui:ExcelReadCell.Result>
+                    <OutArgument x:TypeArguments="ui:GenericValue">[BASLANGIC_TARIH]</OutArgument>
+                  </ui:ExcelReadCell.Result>
+                </ui:ExcelReadCell>
+                <ui:ExcelReadCell Cell="B16" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="314,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_8" SheetName="Sheet1">
+                  <ui:ExcelReadCell.Result>
+                    <OutArgument x:TypeArguments="ui:GenericValue">[BITIS_TARIH]</OutArgument>
+                  </ui:ExcelReadCell.Result>
+                </ui:ExcelReadCell>
+              </Sequence>
+            </ActivityAction>
+          </ui:ExcelApplicationScope.Body>
+        </ui:ExcelApplicationScope>
+        <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="414,1209" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_3" WorkbookPath="C:\Users\Kafein\Desktop\Yeni Microsoft Excel Çalışma Sayfası.xlsx">
+          <ui:ExcelApplicationScope.Body>
+            <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="336,1100" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ExcelWriteCell Cell="A1" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="Sheet1" Text="[ISIM]" />
+                <ui:ExcelWriteCell Cell="B1" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_2" SheetName="Sheet1" Text="[TEL_NO]" />
+                <ui:ExcelWriteCell Cell="C1" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_3" SheetName="Sheet1" Text="[MAIL]" />
+                <ui:ExcelWriteCell Cell="A2" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_4" SheetName="Sheet1" Text="[CIKIS_IP]" />
+                <ui:ExcelWriteCell Cell="A3" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_5" SheetName="Sheet1" Text="[PROD_IP]" />
+                <ui:ExcelWriteCell Cell="A4" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_6" SheetName="Sheet1" Text="[BASLANGIC_TARIH]" />
+                <ui:ExcelWriteCell Cell="A5" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_7" SheetName="Sheet1" Text="[BITIS_TARIH]" />
+                <ui:ExcelWriteCell Cell="A6" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_8" SheetName="Sheet1" Text="[FIRM_NO]" />
+              </Sequence>
+            </ActivityAction>
+          </ui:ExcelApplicationScope.Body>
+        </ui:ExcelApplicationScope>
+      </Sequence>
+    </Sequence>
+  </Sequence>
+</Activity>

@@ -1,0 +1,207 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="deneme" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="759,2375" sap2010:WorkflowViewState.IdRef="deneme_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="21">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="16">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="719,2295" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="excel" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="çıkışip" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="başlangıçtarihi" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="bitiştarihi" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="697,2171" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_3" WorkbookPath="C:\Users\Kafein\Desktop\ısparta.xlsx">
+      <ui:ExcelApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="683,2062" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="ui:GenericValue" Name="firmaadı" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ExcelReadCell Cell="C11" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="661,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_1" SheetName="Sayfa1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="ui:GenericValue">[çıkışip]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+            <ui:ExcelReadCell Cell="B16" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="661,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_2" SheetName="Sayfa1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="ui:GenericValue">[başlangıçtarihi]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+            <ui:ExcelReadCell Cell="B17" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="661,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_3" SheetName="Sayfa1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="ui:GenericValue">[bitiştarihi]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+            <ui:ExcelReadCell Cell="B2" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="661,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_4" SheetName="Sayfa1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="ui:GenericValue">[firmaadı]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+            <If Condition="[başlangıçtarihi=&quot;&quot; and bitiştarihi=&quot;&quot;]" sap:VirtualizedContainerService.HintSize="661,1542" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="436,1395" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="414,1209" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" WorkbookPath="C:\Users\Kafein\Desktop\TERACİTY MOBİL İMZA.xlsx">
+                    <ui:ExcelApplicationScope.Body>
+                      <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="336,1100" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:ExcelWriteCell Cell="C18" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="Firewall Talebi" Text="[çıkışip]" />
+                          <ui:ExcelWriteCell Cell="L6" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_2" SheetName="Firewall Talebi">
+                            <ui:ExcelWriteCell.Text>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </ui:ExcelWriteCell.Text>
+                          </ui:ExcelWriteCell>
+                          <ui:ExcelWriteCell Cell="L7" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_3" SheetName="Firewall Talebi">
+                            <ui:ExcelWriteCell.Text>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </ui:ExcelWriteCell.Text>
+                          </ui:ExcelWriteCell>
+                          <ui:ExcelWriteCell Cell="D10" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_4" SheetName="Firewall Talebi" Text="[Now.Date.ToString]" />
+                          <ui:ExcelWriteCell Cell="B18" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_5" SheetName="Firewall Talebi" Text="[firmaadı]" />
+                          <ui:ExcelWriteCell Cell="E18" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_6" SheetName="Firewall Talebi" Text="[firmaadı]" />
+                          <ui:ExcelWriteCell Cell="F18" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_7" SheetName="Firewall Talebi" Text="[firmaadı]" />
+                          <ui:ExcelWriteCell Cell="P18" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_8" SheetName="Firewall Talebi" Text="[firmaadı  + &quot;Mobil imza entegrasyonu için firewall erişim talebi&quot;]" />
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ExcelApplicationScope.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:ExcelApplicationScope>
+                  <ui:CopyFile ContinueOnError="{x:Null}" Destination="[&quot;C:\Users\Kafein\Desktop\&quot;+firmaadı+ &quot;.xlsx&quot;]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="414,22" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="False" Path="C:\Users\Kafein\Desktop\TERACİTY MOBİL İMZA.xlsx" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" WorkbookPath="C:\Users\Kafein\Desktop\TERACİTY MOBİL İMZA.xlsx">
+                  <ui:ExcelApplicationScope.Body>
+                    <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="358,1605" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:ExcelWriteCell Cell="C18" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="336,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_9" SheetName="Firewall Talebi" Text="[çıkışip]" />
+                        <ui:ExcelWriteCell Cell="L6" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="336,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_10" SheetName="Firewall Talebi" Text="[başlangıçtarihi]" />
+                        <ui:ExcelWriteCell Cell="L7" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="336,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_11" SheetName="Firewall Talebi" Text="[bitiştarihi]" />
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="336,1100" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:ExcelWriteCell Cell="C18" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_12" SheetName="Firewall Talebi" Text="[çıkışip]" />
+                          <ui:ExcelWriteCell Cell="L6" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_13" SheetName="Firewall Talebi">
+                            <ui:ExcelWriteCell.Text>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </ui:ExcelWriteCell.Text>
+                          </ui:ExcelWriteCell>
+                          <ui:ExcelWriteCell Cell="L7" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_14" SheetName="Firewall Talebi">
+                            <ui:ExcelWriteCell.Text>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </ui:ExcelWriteCell.Text>
+                          </ui:ExcelWriteCell>
+                          <ui:ExcelWriteCell Cell="D10" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_15" SheetName="Firewall Talebi" Text="[Now.Date.ToString]" />
+                          <ui:ExcelWriteCell Cell="B18" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_16" SheetName="Firewall Talebi" Text="[firmaadı]" />
+                          <ui:ExcelWriteCell Cell="E18" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_17" SheetName="Firewall Talebi" Text="[firmaadı]" />
+                          <ui:ExcelWriteCell Cell="F18" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_18" SheetName="Firewall Talebi" Text="[firmaadı]" />
+                          <ui:ExcelWriteCell Cell="P18" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_19" SheetName="Firewall Talebi" Text="[firmaadı  + &quot;Mobil imza entegrasyonu için firewall erişim talebi&quot;]" />
+                        </Sequence>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ExcelApplicationScope.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:ExcelApplicationScope>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </ui:ExcelApplicationScope.Body>
+    </ui:ExcelApplicationScope>
+  </Sequence>
+</Activity>
