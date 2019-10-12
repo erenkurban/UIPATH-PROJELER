@@ -1,0 +1,2 @@
+Proje 2019 yılı için düzgün çalışmaktadır fakat diğer tarihlere geçildiğinde Dinamik selector kullanılmasına rağmen, siteden kaynaklı olduğunu düşündüğüm click activitesini gerçekleştirmiyor. 
+Sitedeki her bir yıl sekmesini farklı algılıyor. Çok uğraşlarım sonucu bir sonuca varamadım. 
